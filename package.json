@@ -1,0 +1,17 @@
+{
+  "name": "cheesecake",
+  "version": "1.0.0",
+  "description": "Typescript production assistant",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "author": "Alex Griffiths",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.7"
+  }
+}
